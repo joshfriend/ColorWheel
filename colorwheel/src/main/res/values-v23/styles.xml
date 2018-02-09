@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Fullscreen">
+        <!-- Tinting the bar icons is possible in API 23+ so this is just the default color -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Request transparent status bar -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- App will draw underneath the system chrome -->
+        <item name="android:fitsSystemWindows">@bool/fullscreen_style_fit_system_windows</item>
+        <!-- Request translucent bottom navigation bar -->
+        <item name="android:windowTranslucentNavigation">@bool/fullscreen_style_use_translucent_nav</item>
+    </style>
+</resources>

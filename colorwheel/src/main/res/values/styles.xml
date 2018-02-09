@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <!-- KitKat does not support drawing translucent bottom nav -->
+    <bool name="fullscreen_style_fit_system_windows">true</bool>
+    <bool name="fullscreen_style_use_translucent_nav">true</bool>
+
+    <style name="AppTheme" parent="AppThemeBase" />
+
+    <style name="AppTheme.Fullscreen">
+        <!-- KitKat can show a translucent navbar, but config_showNavigationBar
+         is always false so you can't really tell if the device has hardware nav
+         keys or not. -->
+    </style>
+
+</resources>

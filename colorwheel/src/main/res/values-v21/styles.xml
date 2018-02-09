@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="fullscreen_style_fit_system_windows">false</bool>
+
+    <style name="AppTheme.Fullscreen">
+        <!-- Changing the tint of the statusbar icons is not supported below
+        API 23 so pick a color that will look OK with white icons all other
+        toolbar colors (black) -->
+        <item name="android:statusBarColor">@color/md_black_1000</item>
+        <!-- Request transparent status bar -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- App will draw underneath the system chrome -->
+        <item name="android:fitsSystemWindows">@bool/fullscreen_style_fit_system_windows</item>
+        <!-- Request translucent bottom navigation bar -->
+        <item name="android:windowTranslucentNavigation">@bool/fullscreen_style_use_translucent_nav</item>
+    </style>
+</resources>
