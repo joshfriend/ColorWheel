@@ -18,7 +18,6 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
 
-    <!-- KitKat does not support drawing translucent bottom nav -->
     <bool name="fullscreen_style_fit_system_windows">true</bool>
     <bool name="fullscreen_style_use_translucent_nav">true</bool>
 
@@ -28,6 +27,7 @@
         <!-- KitKat can show a translucent navbar, but config_showNavigationBar
          is always false so you can't really tell if the device has hardware nav
          keys or not. -->
+        <item name="android:fitsSystemWindows">@bool/fullscreen_style_fit_system_windows</item>
     </style>
 
 </resources>

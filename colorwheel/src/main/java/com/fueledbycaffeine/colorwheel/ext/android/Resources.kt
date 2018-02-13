@@ -25,10 +25,9 @@ inline val Resources.isNavBarAtBottom: Boolean get() {
  */
 val Resources.navBarHeight: Int @Px get() {
   val id = getIdentifier("navigation_bar_height", "dimen", "android")
-  return if (id > 0) {
-    getDimensionPixelSize(id)
-  } else {
-    0
+  return when {
+    id > 0 -> getDimensionPixelSize(id)
+    else -> 0
   }
 }
 
